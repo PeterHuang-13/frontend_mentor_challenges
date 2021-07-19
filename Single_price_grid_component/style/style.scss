@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+$primaryColorCyan: hsl(179, 62%, 43%);
+
+body {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+
+  main {
+    flex: 1 1 1440px;
+    padding: 2rem 1.5rem;
+
+    h1.title {
+      color: $primaryColorCyan;
+      padding: 1rem 0rem;
+    }
+
+    h2.sub-title {
+      color: hsl(71, 73%, 54%);
+      padding: 0.5rem 0rem;
+    }
+
+    p {
+      color: hsl(218, 22%, 67%);
+      padding: 0.5rem 0rem;
+    }
+  }
+
+  section {
+    flex: 1 1 720px;
+}
+
+section.left {
+  
+}

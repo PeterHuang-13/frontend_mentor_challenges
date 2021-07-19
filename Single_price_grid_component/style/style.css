@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+}
+
+body main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1440px;
+          flex: 1 1 1440px;
+  padding: 2rem 1.5rem;
+}
+
+body main h1.title {
+  color: #2ab2af;
+  padding: 1rem 0rem;
+}
+
+body main h2.sub-title {
+  color: #c0df34;
+  padding: 0.5rem 0rem;
+}
+
+body main p {
+  color: #98a6bd;
+  padding: 0.5rem 0rem;
+}
+
+body section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 720px;
+          flex: 1 1 720px;
+}
+
+body section .left {
+  background: #2ab2af;
+}
+/*# sourceMappingURL=style.css.map */
