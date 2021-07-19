@@ -16,11 +16,15 @@
 
 // primary color
 $colorCyan: hsl(179, 62%, 43%);
+$colorLightCyan: hsl(179, 55%, 55%);
 $colorBrightYellow: hsl(71, 73%, 54%);
 
 // neutral color
 $lightGray: hsl(204, 43%, 93%);
 $grayishBlue: hsl(218, 22%, 67%);
+
+// border-radius
+$radius: 12px;
 
 body {
   display: flex;
@@ -30,7 +34,6 @@ body {
   background-color: $lightGray;
 
   main {
-    border: 1px solid black;
     width: 50vw;
     min-height: 55vh;
     display: flex;
@@ -40,7 +43,7 @@ body {
     section.top {
       background-color: white;
       padding: 1rem 2rem;
-
+      border-radius: $radius $radius 0px 0px;
       h1 {
         color: $colorCyan;
       }
@@ -62,13 +65,43 @@ body {
       div.left {
         background-color: $colorCyan;
         color: white;
-        padding: 1rem 2rem;
+        padding: 2rem 2rem;
         flex: 1 2 175px;
+        border-radius: 0px 0px 0px $radius;
+
+        div.fee {
+          padding: 1rem 0rem;
+          #dollar {
+            padding: 0rem 0.5rem 0rem 0rem;
+            font-size: 26px;
+            font-weight: bold;
+          }
+          #mth {
+            color: $lightGray;
+          }
+        }
+
+        div.container {
+          display: block;
+          border: 1px solid black;
+          text-align: cneter;
+          width: 15rem;
+          a {
+            text-decoration: none;
+          }
+        }
       }
 
       div.right {
-        padding: 1rem 2rem;
+        background-color: $colorLightCyan;
+        color: white;
+        padding: 2rem 2rem;
         flex: 1 2 175px;
+        border-radius: 0px 0px $radius 0px;
+
+        p {
+          padding: 1rem 0rem;
+        }
       }
     }
   }

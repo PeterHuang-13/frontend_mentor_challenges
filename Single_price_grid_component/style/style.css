@@ -24,7 +24,6 @@ body {
 }
 
 body main {
-  border: 1px solid black;
   width: 50vw;
   min-height: 55vh;
   display: -webkit-box;
@@ -38,6 +37,7 @@ body main {
 body main section.top {
   background-color: white;
   padding: 1rem 2rem;
+  border-radius: 12px 12px 0px 0px;
 }
 
 body main section.top h1 {
@@ -64,16 +64,49 @@ body main section.bottom {
 body main section.bottom div.left {
   background-color: #2ab2af;
   color: white;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 2 175px;
           flex: 1 2 175px;
+  border-radius: 0px 0px 0px 12px;
+}
+
+body main section.bottom div.left div.fee {
+  padding: 1rem 0rem;
+}
+
+body main section.bottom div.left div.fee #dollar {
+  padding: 0rem 0.5rem 0rem 0rem;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+body main section.bottom div.left div.fee #mth {
+  color: #e5eff5;
+}
+
+body main section.bottom div.left div.container {
+  display: block;
+  border: 1px solid black;
+  text-align: cneter;
+  width: 15rem;
+}
+
+body main section.bottom div.left div.container a {
+  text-decoration: none;
 }
 
 body main section.bottom div.right {
-  padding: 1rem 2rem;
+  background-color: #4dcbc9;
+  color: white;
+  padding: 2rem 2rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 2 175px;
           flex: 1 2 175px;
+  border-radius: 0px 0px 12px 0px;
+}
+
+body main section.bottom div.right p {
+  padding: 1rem 0rem;
 }
 /*# sourceMappingURL=style.css.map */
