@@ -2,49 +2,74 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Karla", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-weight: normal;
+// }
 
-$primaryColorCyan: hsl(179, 62%, 43%);
+// primary color
+$colorCyan: hsl(179, 62%, 43%);
+$colorBrightYellow: hsl(71, 73%, 54%);
+
+// neutral color
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
 
 body {
-  font-family: "Karla", sans-serif;
   display: flex;
-  flex-wrap: wrap;
-  font-size: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightGray;
 
   main {
-    flex: 1 1 1440px;
-    padding: 2rem 1.5rem;
+    border: 1px solid black;
+    width: 50vw;
+    min-height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0rem;
 
-    h1.title {
-      color: $primaryColorCyan;
-      padding: 1rem 0rem;
+    section.top {
+      background-color: white;
+      padding: 1rem 2rem;
+
+      h1 {
+        color: $colorCyan;
+      }
+
+      h2 {
+        color: $colorBrightYellow;
+        padding: 1rem 0rem;
+      }
+
+      p {
+        color: $grayishBlue;
+      }
     }
 
-    h2.sub-title {
-      color: hsl(71, 73%, 54%);
-      padding: 0.5rem 0rem;
-    }
+    section.bottom {
+      display: flex;
+      flex-wrap: wrap;
 
-    p {
-      color: hsl(218, 22%, 67%);
-      padding: 0.5rem 0rem;
+      div.left {
+        background-color: $colorCyan;
+        color: white;
+        padding: 1rem 2rem;
+        flex: 1 2 175px;
+      }
+
+      div.right {
+        padding: 1rem 2rem;
+        flex: 1 2 175px;
+      }
     }
   }
-
-  section {
-    flex: 1 1 720px;
-}
-
-section.left {
-  
 }
