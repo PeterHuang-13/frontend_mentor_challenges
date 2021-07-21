@@ -109,6 +109,13 @@ body main section.bottom div.left a {
   border-radius: 8px;
   -webkit-box-shadow: 0 3px 10px gray;
           box-shadow: 0 3px 10px gray;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body main section.bottom div.left a:hover {
+  -webkit-box-shadow: 0px 5px 20px gray;
+          box-shadow: 0px 5px 20px gray;
 }
 
 body main section.bottom div.right {
