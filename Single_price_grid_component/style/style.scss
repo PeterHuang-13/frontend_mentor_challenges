@@ -5,15 +5,6 @@
   font-family: "Karla", sans-serif;
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-weight: normal;
-// }
-
 // primary color
 $colorCyan: hsl(179, 62%, 43%);
 $colorLightCyan: hsl(179, 55%, 55%);
@@ -38,12 +29,16 @@ body {
     min-height: 55vh;
     display: flex;
     flex-wrap: wrap;
-    margin: 4rem 0rem;
+    margin: 4rem 0rem 2rem 0rem;
+    justify-content: center;
+    box-shadow: 0 3px 10px gray;
+    border-radius: $radius;
 
     section.top {
       background-color: white;
-      padding: 1rem 2rem;
+      padding: 2rem 2rem;
       border-radius: $radius $radius 0px 0px;
+
       h1 {
         color: $colorCyan;
       }
@@ -65,12 +60,14 @@ body {
       div.left {
         background-color: $colorCyan;
         color: white;
-        padding: 2rem 2rem;
+        padding: 1.5rem 2rem;
         flex: 1 2 175px;
         border-radius: 0px 0px 0px $radius;
 
         div.fee {
           padding: 1rem 0rem;
+          display: flex;
+          align-items: center;
           #dollar {
             padding: 0rem 0.5rem 0rem 0rem;
             font-size: 26px;
@@ -80,28 +77,54 @@ body {
             color: $lightGray;
           }
         }
-
-        div.container {
-          display: block;
-          border: 1px solid black;
-          text-align: cneter;
-          width: 15rem;
-          a {
-            text-decoration: none;
-          }
+        a {
+          margin: 1rem 0rem;
+          padding: 1rem 0rem;
+          display: inline-block;
+          width: 18vw;
+          text-align: center;
+          text-decoration: none;
+          background-color: $colorBrightYellow;
+          color: white;
+          border-radius: 8px;
+          box-shadow: 0 3px 10px gray;
         }
       }
 
       div.right {
         background-color: $colorLightCyan;
         color: white;
-        padding: 2rem 2rem;
+        padding: 1.5rem 2rem;
         flex: 1 2 175px;
         border-radius: 0px 0px $radius 0px;
-
         p {
           padding: 1rem 0rem;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  body main {
+    margin: 2rem 0rem 2rem 0rem;
+    section.bottom {
+      div.left {
+        border-radius: 0px 0px 0px 0px;
+        padding: 1rem 1.75rem;
+        a {
+          width: 50vw;
+        }
+      }
+      div.right {
+        padding: 1rem 1.75rem;
+        border-radius: 0px 0px $radius $radius;
       }
     }
   }
