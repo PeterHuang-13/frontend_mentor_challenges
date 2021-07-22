@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1.model {
+  padding: 2rem 0rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 36px;
+}
+
+p {
+  height: 25vh;
+  line-height: 24px;
+  font-family: "Lexend Deca", sans-serif;
+  font: 15px;
+}
+
+a.learn {
+  display: inline-block;
+  width: 10rem;
+  margin: 2rem 0rem 1rem 0rem;
+  padding: 1rem 0rem;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 50px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0rem 1rem 0rem;
+  width: 60vw;
+}
+
+body main section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 125px;
+          flex: 1 1 125px;
+  color: white;
+  padding: 3rem 3rem 1.5rem 3rem;
+}
+
+body main section.sedans {
+  background-color: #e38826;
+  border-radius: 10px 0 0 10px;
+}
+
+body main section.sedans a.learn {
+  color: #e38826;
+}
+
+body main section.suvs {
+  background-color: #006970;
+}
+
+body main section.suvs a.learn {
+  color: #006970;
+}
+
+body main section.luxury {
+  background-color: #004241;
+  border-radius: 0 10px 10px 0;
+}
+
+body main section.luxury a.learn {
+  color: #004241;
+}
+
+body main section a.learn:hover {
+  color: white;
+  font-weight: bold;
+  background: none;
+  border: 2px solid white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1279px) {
+  body main {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body main section p {
+    height: 18vh;
+  }
+  body main section.sedans {
+    border-radius: 10px 0 0 0;
+  }
+  body main section.suvs {
+    border-radius: 0 10px 0 0;
+  }
+  body main section.luxury {
+    border-radius: 0 0 10px 10px;
+  }
+  body main section.luxury p {
+    height: 5vh;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  body main section {
+    padding: 2rem 2rem;
+  }
+  body main section p {
+    height: 10rem;
+  }
+  body main section.sedans {
+    border-radius: 10px 10px 0 0;
+  }
+  body main section.suvs {
+    border-radius: 0 0 0 0;
+  }
+  body main section.luxury {
+    border-radius: 0 0 10px 10px;
+  }
+  body main section.luxury p {
+    height: 10rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

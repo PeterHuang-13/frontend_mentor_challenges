@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+// color variable
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+
+// border radius
+$radius: 10px;
+
+// common setting
+h1.model {
+  padding: 2rem 0rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 36px;
+}
+p {
+  height: 25vh;
+  line-height: 24px;
+  font-family: "Lexend Deca", sans-serif;
+  font: 15px;
+}
+a.learn {
+  display: inline-block;
+  width: 10rem;
+  margin: 2rem 0rem 1rem 0rem;
+  padding: 1rem 0rem;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid rgba($color: #000000, $alpha: 0);
+  border-radius: 50px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0rem 1rem 0rem;
+    width: 60vw;
+
+    section {
+      flex: 1 1 125px;
+      color: white;
+      padding: 3rem 3rem 1.5rem 3rem;
+
+      &.sedans {
+        background-color: $brightOrange;
+        border-radius: $radius 0 0 $radius;
+        a.learn {
+          color: $brightOrange;
+        }
+      }
+      &.suvs {
+        background-color: $darkCyan;
+        a.learn {
+          color: $darkCyan;
+        }
+      }
+      &.luxury {
+        background-color: $veryDarkCyan;
+        border-radius: 0 $radius $radius 0;
+        a.learn {
+          color: $veryDarkCyan;
+        }
+      }
+      a.learn:hover {
+        color: white;
+        font-weight: bold;
+        background: none;
+        border: 2px solid white;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  body main {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body main section {
+    p {
+      height: 18vh;
+    }
+    &.sedans {
+      border-radius: $radius 0 0 0;
+    }
+    &.suvs {
+      border-radius: 0 $radius 0 0;
+    }
+    &.luxury {
+      border-radius: 0 0 $radius $radius;
+      p {
+        height: 5vh;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 682px) {
+  body main section {
+    padding: 2rem 2rem;
+    p {
+      height: 10rem;
+    }
+    &.sedans {
+      border-radius: $radius $radius 0 0;
+    }
+    &.suvs {
+      border-radius: 0 0 0 0;
+    }
+    &.luxury {
+      border-radius: 0 0 $radius $radius;
+      p {
+        height: 10rem;
+      }
+    }
+  }
+}
