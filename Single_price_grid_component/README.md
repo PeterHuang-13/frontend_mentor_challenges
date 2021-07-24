@@ -46,5 +46,5 @@ Users should be able to:
 
 ## Author
 
-- Github - [Peter Huang](https://github.com/PeterHuang-13?tab=repositories)
+- Github - [Peter Huang](https://github.com/PeterHuang-13)
 - Frontend Mentor - [@PeterHuang-13](https://www.frontendmentor.io/profile/PeterHuang-13)

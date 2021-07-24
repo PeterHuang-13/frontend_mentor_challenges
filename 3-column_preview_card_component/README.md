@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Github - [Peter Huang](https://github.com/PeterHuang-13/frontend_mentor_challenges/tree/master/3-column_preview_card_component)
+- Github - [Peter Huang](https://github.com/PeterHuang-13)
 - Frontend Mentor - [@PeterHuang-13](https://www.frontendmentor.io/profile/PeterHuang-13)
