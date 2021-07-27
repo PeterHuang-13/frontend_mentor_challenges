@@ -1,8 +1,12 @@
 # My collections of Frontend Mentor Challenges
 
-Hi, my name is Peter, a self-taught front-end developer.
+Hi, my name is Peter, I learn front-end languages on my own.
+
+To improve and familiar with front-end languages, I started to submit the front-end solutions at frontmental.io
 
 This repository stores the solutions that I submitted at [frontmental.io](https://www.frontendmentor.io/).
+
+I hope you find this repository helpful.
 
 ### Newbie
 
