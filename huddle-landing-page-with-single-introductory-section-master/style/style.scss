@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; // for body
+}
+
+// color variable
+$violet: hsl(257, 40%, 49%);
+$softMagenta: hsl(300, 69%, 71%);
+
+body {
+  background: left / contain no-repeat url(../images/bg-desktop.svg);
+  background-color: $violet;
+
+  img.logo {
+    padding: 2.5rem 0rem 0rem 2.5rem;
+    width: 15rem;
+  }
+
+  main {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+
+    img.mockup {
+      width: 45%;
+    }
+
+    article {
+      width: 50%;
+      padding: 2rem 0rem 0rem 2rem;
+
+      h1 {
+        font-size: 2.5rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+      }
+      p {
+        margin-top: 1rem;
+        line-height: 1.5rem;
+      }
+      a {
+        margin-top: 2rem;
+        display: inline-block;
+        text-align: center;
+        padding: 0.8em 5rem;
+        background-color: white;
+        border-radius: 90px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        color: $violet;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        &:hover {
+          cursor: pointer;
+          background-color: $softMagenta;
+          color: white;
+          font-weight: 600;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+  }
+
+  section.icon {
+    height: 6rem;
+    display: flex;
+    justify-content: flex-end;
+
+    svg {
+      margin: 1rem 0.5rem;
+      fill: white;
+      &.ig {
+        margin-right: 2rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        fill: $softMagenta;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background: top / contain no-repeat url(../images/bg-mobile.svg);
+    background-color: $violet;
+    main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      img.mockup {
+        width: 85%;
+      }
+      article {
+        width: 85%;
+      }
+    }
+
+    section.icon {
+      justify-content: center;
+      height: 8rem;
+      svg {
+        margin: 3rem 1rem;
+        &.fb {
+          margin-left: 3rem;
+        }
+        &.ig {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
