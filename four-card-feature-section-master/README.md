@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/using-scss-and-flexbox-5F-56Nx2s](https://www.frontendmentor.io/solutions/using-scss-and-flexbox-5F-56Nx2s)
 - Live Site URL: [https://four-card-feature-by-peter.netlify.app/](https://four-card-feature-by-peter.netlify.app/)
 
 ## My process
