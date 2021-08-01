@@ -48,7 +48,10 @@ function validate(value) {
   let atPos = value.indexOf('@');
   let dotPos = value.lastIndexOf('.');
 
-  if (atPos<2 || dotPos<atPos+2 || dotPos+2>=value.length) {
+  if (value === '') {
+    error.textContent = 'Whoops! It looks like you forgot to add your email'
+    return true;
+  } else if (atPos<2 || dotPos<atPos+2 || dotPos+2>=value.length) {
     console.log(`atPos:${atPos}, dotPos:${dotPos}`);
     error.textContent = 'Please provide a valid email address.'
     return true; // trigger the if statement

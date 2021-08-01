@@ -38,7 +38,7 @@ body {
         color: $veryDarkBlue;
       }
     }
-    h3.sub-title {
+    h2.sub-title {
       margin-bottom: 2rem;
       font-weight: 300;
       color: $veryDarkBlue;
@@ -76,7 +76,6 @@ body {
       font-size: 0.8rem;
       color: $lightRed;
       font-style: italic;
-      // padding: 0.5rem 24rem 0rem 0rem;
     }
 
     #errorDesktop {
@@ -93,7 +92,7 @@ body {
     }
   }
 
-  section.icons {
+  div.icons {
     svg {
       width: 2rem;
       height: 2rem;
@@ -109,7 +108,7 @@ body {
     }
   }
 
-  section.note {
+  div.note {
     margin-top: 1rem;
     p {
       color: $gray;

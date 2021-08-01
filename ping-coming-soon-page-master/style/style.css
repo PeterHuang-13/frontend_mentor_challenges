@@ -41,7 +41,7 @@ body main h1.title span.soon {
   color: #151f29;
 }
 
-body main h3.sub-title {
+body main h2.sub-title {
   margin-bottom: 2rem;
   font-weight: 300;
   color: #151f29;
@@ -111,7 +111,7 @@ body main img.dashboard {
   min-width: 330px;
 }
 
-body section.icons svg {
+body div.icons svg {
   width: 2rem;
   height: 2rem;
   margin: 0rem 0.5rem;
@@ -121,17 +121,17 @@ body section.icons svg {
   transition: all 0.2s ease;
 }
 
-body section.icons svg:hover {
+body div.icons svg:hover {
   cursor: pointer;
   fill: white;
   background-color: #4f7df3;
 }
 
-body section.note {
+body div.note {
   margin-top: 1rem;
 }
 
-body section.note p {
+body div.note p {
   color: #969696;
 }
 
