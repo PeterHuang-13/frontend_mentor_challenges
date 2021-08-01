@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+// color variable
+$blue: hsl(223, 87%, 63%);
+$paleBlue: hsl(223, 100%, 88%);
+$lightRed: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$veryDarkBlue: hsl(209, 33%, 12%);
+
+body {
+  main {
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img.logo {
+      width: 8%;
+      min-width: 4rem;
+    }
+
+    h1.title {
+      margin: 2rem 0rem 0.6rem 0rem;
+      font-size: 2.3rem;
+      color: $gray;
+      font-weight: 300;
+      span.soon {
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: $veryDarkBlue;
+      }
+    }
+    h3.sub-title {
+      margin-bottom: 2rem;
+      font-weight: 300;
+      color: $veryDarkBlue;
+    }
+
+    form {
+      input {
+        padding: 1.25rem;
+        width: 25rem;
+        height: 3rem;
+        border-radius: 90px;
+        &::placeholder {
+          font-size: 1rem;
+          color: gray;
+        }
+      }
+      button {
+        margin-left: 1rem;
+        width: 12rem;
+        height: 3rem;
+        border-radius: 90px;
+        color: white;
+        background-color: $blue;
+        border: none;
+        font-weight: 600;
+        &:hover {
+          cursor: pointer;
+          background-color: $paleBlue;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+
+    #errorMobile {
+      font-size: 0.8rem;
+      color: $lightRed;
+      font-style: italic;
+      // padding: 0.5rem 24rem 0rem 0rem;
+    }
+
+    #errorDesktop {
+      font-size: 0.8rem;
+      color: $lightRed;
+      font-style: italic;
+      padding: 0.5rem 24rem 0rem 0rem;
+    }
+
+    img.dashboard {
+      padding: 3rem;
+      width: 60%;
+      min-width: 330px;
+    }
+  }
+
+  section.icons {
+    svg {
+      width: 2rem;
+      height: 2rem;
+      margin: 0rem 0.5rem;
+      fill: $blue;
+      border-radius: 50%;
+      &:hover {
+        cursor: pointer;
+        fill: white;
+        background-color: $blue;
+      }
+      transition: all 0.2s ease;
+    }
+  }
+
+  section.note {
+    margin-top: 1rem;
+    p {
+      color: $gray;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body main {
+    img.dashboard {
+      padding: 0rem;
+      margin: 2rem 0rem 4rem 0rem;
+    }
+  }
+}
+
+@media screen and (max-width: 766px) {
+  body main {
+    h1.title {
+      font-size: 1.5rem;
+      span.soon {
+        font-size: 1.5rem;
+      }
+    }
+    h3.sub-title {
+      font-size: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      input {
+        width: 80%;
+        height: 2.5rem;
+        margin-bottom: 0.3rem;
+      }
+      button {
+        width: 80%;
+        height: 2.5rem;
+        margin: 1rem 0rem;
+      }
+    }
+    #errorDesktop {
+      font-size: 0.8rem;
+      color: $lightRed;
+      font-style: italic;
+      padding: 0rem 0rem 0rem 0rem;
+    }
+  }
+}
