@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+}
+
+body main section.container {
+  width: 80%;
+  margin: 4rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 6px -6px gray;
+          box-shadow: 0 10px 6px -6px gray;
+}
+
+body main section.container div.imgContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 334px;
+          flex: 1 1 334px;
+  background: url(../images/bg-pattern-desktop.svg) no-repeat;
+  background-size: cover;
+  background-position: bottom -30px left -100px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 20px 0 0 20px;
+}
+
+body main section.container div.imgContainer img.box {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body main section.container div.imgContainer img.box.active {
+  left: 10px;
+}
+
+body main section.container div.imgContainer img.woman {
+  margin: 120px 0px 0px -70px;
+}
+
+body main section.container div.imgContainer img.mobile {
+  display: none;
+}
+
+body main section.container section.accordion-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+  padding: 4rem 0rem 0rem 0rem;
+  width: 50%;
+  background-color: white;
+  border-radius: 0 20px 20px 0;
+}
+
+body main section.container section.accordion-container h1.title {
+  padding: 3rem 0rem 2rem 0rem;
+  font-size: 3rem;
+}
+
+body main section.container section.accordion-container div.questionContainer {
+  width: 80%;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+body main section.container section.accordion-container div.questionContainer button.accordion {
+  background-color: white;
+  cursor: pointer;
+  padding: 2rem 0rem 1rem 0rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 1.4rem;
+  color: #4a4b5e;
+}
+
+body main section.container section.accordion-container div.questionContainer button.accordion:hover {
+  color: #f47c57;
+  font-weight: 700;
+}
+
+body main section.container section.accordion-container div.questionContainer button.accordion::after {
+  content: url(../images/icon-arrow-down.svg);
+  float: right;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body main section.container section.accordion-container div.questionContainer button.accordion.active {
+  font-weight: 700;
+}
+
+body main section.container section.accordion-container div.questionContainer button.accordion.active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body main section.container section.accordion-container div.questionContainer div.panel {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #787887;
+}
+
+@media screen and (max-width: 1050px) {
+  body main section.container {
+    width: 90%;
+  }
+  body main section.container div.imgContainer img.box {
+    left: 0px;
+  }
+  body main section.container div.imgContainer img.woman {
+    height: 470px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body main section.container div.imgContainer img.woman {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  body main section.container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body main section.container div.imgContainer {
+    margin-top: 10rem;
+    background-image: url(../images/bg-pattern-mobile.svg) no-repeat;
+    background-size: 260px;
+    background-position: bottom;
+    border-radius: 20px 20px 0 0;
+    height: 130px;
+  }
+  body main section.container div.imgContainer img.box {
+    display: none;
+  }
+  body main section.container div.imgContainer img.woman {
+    display: none;
+  }
+  body main section.container div.imgContainer img.mobile {
+    display: block;
+    position: absolute;
+    top: 26%;
+    left: 48%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  body main section.container section.accordion-container {
+    padding: 2rem;
+    border-radius: 0 0 20px 20px;
+  }
+  body main section.container section.accordion-container h1.title {
+    text-align: center;
+  }
+  body main section.container section.accordion-container div.questionContainer {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

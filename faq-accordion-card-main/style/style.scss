@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+// color variables
+$softViolet: hsl(273, 75%, 66%);
+$softBlue: hsl(240, 73%, 65%);
+$veryDarkDesaturatedBlue: hsl(237, 12%, 33%);
+$softRed: hsl(14, 88%, 65%);
+$darkGrayishBlue: hsl(240, 6%, 50%);
+$lightGrauishBlue: hsl(240, 5%, 91%);
+$radius: 20px;
+
+body {
+  height: 100vh;
+  background: linear-gradient($softViolet, $softBlue);
+
+  main {
+    section.container {
+      width: 80%;
+      margin: 4rem auto;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: $radius;
+      box-shadow: 0 10px 6px -6px gray;
+
+      div.imgContainer {
+        flex: 1 1 334px;
+        background: url(../images/bg-pattern-desktop.svg) no-repeat;
+        background-size: cover;
+        background-position: bottom -30px left -100px;
+        background-color: white;
+        overflow: hidden;
+        border-radius: $radius 0 0 $radius;
+
+        img {
+          &.box {
+            position: absolute;
+            top: 300px;
+            left: 50px;
+            transition: all 0.3s ease;
+            &.active {
+              left: 10px;
+            }
+          }
+
+          &.woman {
+            margin: 120px 0px 0px -70px;
+          }
+
+          &.mobile {
+            display: none;
+          }
+        }
+      }
+
+      section.accordion-container {
+        flex: 1 1 400px;
+        padding: 4rem 0rem 0rem 0rem;
+        width: 50%;
+        background-color: white;
+        border-radius: 0 $radius $radius 0;
+
+        h1.title {
+          padding: 3rem 0rem 2rem 0rem;
+          font-size: 3rem;
+        }
+
+        div.questionContainer {
+          width: 80%;
+          border-bottom: 1px solid $lightGrauishBlue;
+
+          button.accordion {
+            background-color: white;
+            cursor: pointer;
+            padding: 2rem 0rem 1rem 0rem;
+            width: 100%;
+            text-align: left;
+            border: none;
+            transition: all 0.5s ease;
+            font-size: 1.4rem;
+            color: $veryDarkDesaturatedBlue;
+            &:hover {
+              color: $softRed;
+              font-weight: 700;
+            }
+            &::after {
+              content: url(../images/icon-arrow-down.svg);
+              float: right;
+              transition: all 0.2s ease;
+            }
+
+            &.active {
+              font-weight: 700;
+              &::after {
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+          div.panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.2s ease;
+            color: $darkGrayishBlue;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body main section.container {
+    width: 90%;
+    div.imgContainer {
+      img.box {
+        left: 0px;
+      }
+      img.woman {
+        height: 470px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body main section.container div.imgContainer {
+    img.woman {
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 734px) {
+  body main section.container {
+    flex-wrap: wrap;
+    div.imgContainer {
+      margin-top: 10rem;
+      background-image: url(../images/bg-pattern-mobile.svg) no-repeat;
+      background-size: 260px;
+      background-position: bottom;
+      border-radius: $radius $radius 0 0;
+      height: 130px;
+
+      img {
+        &.box {
+          display: none;
+        }
+        &.woman {
+          display: none;
+        }
+        &.mobile {
+          display: block;
+          position: absolute;
+          top: 26%;
+          left: 48%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    section.accordion-container {
+      padding: 2rem;
+      border-radius: 0 0 $radius $radius;
+
+      h1.title {
+        text-align: center;
+      }
+      div.questionContainer {
+        width: 95%;
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <!-- googel font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <!-- images container -->
+        <div class="imgContainer">
+          <img
+            class="box"
+            src="./images/illustration-box-desktop.svg"
+            alt="box"
+          />
+          <img
+            class="woman"
+            src="./images/illustration-woman-online-desktop.svg"
+            alt="woman"
+          />
+          <img
+            src="./images/illustration-woman-online-mobile.svg"
+            alt="mobile"
+            class="mobile"
+          />
+        </div>
+
+        <!-- accordion container -->
+        <section class="accordion-container">
+          <!-- title FAQ -->
+          <h1 class="title">FAQ</h1>
+
+          <!-- question1 -->
+          <div class="questionContainer">
+            <button class="accordion">
+              How many team members can I invite?
+            </button>
+            <div class="panel">
+              <p>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+          </div>
+
+          <!-- question2 -->
+          <div class="questionContainer">
+            <button class="accordion">
+              What is the maximum file upload size?
+            </button>
+            <div class="panel">
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+          </div>
+
+          <!-- question3 -->
+          <div class="questionContainer">
+            <button class="accordion">How do I reset my password?</button>
+            <div class="panel">
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+          </div>
+
+          <!-- question4 -->
+          <div class="questionContainer">
+            <button class="accordion">Can I cancel my subscription?</button>
+            <div class="panel">
+              <p>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+          </div>
+
+          <!-- question5 -->
+          <div class="questionContainer">
+            <button class="accordion">
+              Do you provide additional support?
+            </button>
+            <div class="panel">
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. <a href="https://github.com/PeterHuang-13">Peter Huang</a>.
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
