@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/accordion-card-by-using-javascript-\_ypLDNr98](https://www.frontendmentor.io/solutions/accordion-card-by-using-javascript-_ypLDNr98)
 - Live Site URL: [https://faq-accordion-solution.netlify.app/](https://faq-accordion-solution.netlify.app/)
 
 ## My process
