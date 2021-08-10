@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/using-gridflex-javascript-H6Ocxrl6w](https://www.frontendmentor.io/solutions/using-gridflex-javascript-H6Ocxrl6w)
 - Live Site URL: [https://article-component-by-peter.netlify.app/](https://article-component-by-peter.netlify.app/)
 
 ## My process
