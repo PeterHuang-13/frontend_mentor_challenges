@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  min-height: 100vh;
+  background-color: #ecf2f8;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+body main article.container {
+  width: 700px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 1fr;
+      grid-template-columns: 40% 1fr;
+  border-radius: 13px;
+  -webkit-box-shadow: 0 5px 30px rgba(72, 85, 106, 0.2);
+          box-shadow: 0 5px 30px rgba(72, 85, 106, 0.2);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+body main article.container div.drawer {
+  background-image: url(../images/drawers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 13px 0 0 13px;
+}
+
+body main article.container section.right {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0 13px 13px 0;
+}
+
+body main article.container section.right h1.title {
+  font-size: 1.3rem;
+  color: #48556a;
+  font-weight: 700;
+}
+
+body main article.container section.right h3 {
+  padding: 1rem 0rem;
+  color: #6d7f97;
+  line-height: 1.2rem;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body main article.container section.right div.customer {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 1fr 1fr;
+      grid-template-columns: 20% 1fr 1fr;
+}
+
+body main article.container section.right div.customer img.photo {
+  width: 40px;
+  border-radius: 50%;
+}
+
+body main article.container section.right div.customer div.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -15px;
+}
+
+body main article.container section.right div.customer div.info p.name {
+  font-weight: 700;
+  color: #48556a;
+}
+
+body main article.container section.right div.customer div.info p.date {
+  margin-top: 0.3rem;
+  font-weight: 500;
+  color: #9eafc2;
+}
+
+body main article.container section.right div.customer div.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 0.5rem;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  z-index: 1;
+}
+
+body main article.container section.right div.customer div.share svg {
+  fill: #6e8098;
+}
+
+body main article.container section.right div.customer div.share.active {
+  background-color: #6d7f97;
+}
+
+body main article.container section.right div.customer div.share.active #arrow {
+  fill: #ecf2f8;
+}
+
+body main article.container div.share-socials {
+  background-color: #48556a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 17rem;
+  height: 3.5rem;
+  border-radius: 10px;
+  right: -78px;
+  bottom: 66px;
+  -webkit-transition: z-index 0s;
+  transition: z-index 0s;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+  opacity: 0;
+  z-index: -1;
+}
+
+body main article.container div.share-socials.active {
+  -webkit-transform: translateY(-35px);
+          transform: translateY(-35px);
+  opacity: 1;
+  z-index: 0;
+}
+
+body main article.container div.share-socials::before {
+  content: "";
+  background-color: #48556a;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body main article.container div.share-socials p {
+  color: #9eafc2;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+body main article.container div.share-socials div.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 6rem;
+}
+
+body main article.container div.share-socials div.icons img:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  body main article.container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 40% 1fr;
+        grid-template-rows: 40% 1fr;
+    width: 338px;
+    height: 550px;
+  }
+  body main article.container div.drawer {
+    border-radius: 13px 13px 0 0;
+  }
+  body main article.container section.right {
+    border-radius: 0 0 13px 13px;
+    padding-bottom: 0rem;
+  }
+  body main article.container section.right div.customer div.info {
+    margin-left: -5px;
+  }
+  body main article.container section.right div.customer div.share {
+    margin-top: 0.5rem;
+  }
+  body main article.container div.share-socials {
+    width: 100%;
+    height: 70px;
+    right: 0;
+    bottom: -35px;
+    border-radius: 0 0 13px 13px;
+    opacity: 0;
+  }
+  body main article.container div.share-socials::before {
+    content: none;
+  }
+  body main article.container div.share-socials p {
+    letter-spacing: 0.3rem;
+    margin-right: 1rem;
+    margin-left: -6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
