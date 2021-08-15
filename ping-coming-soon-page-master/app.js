@@ -52,7 +52,6 @@ function validate(value) {
     error.textContent = 'Whoops! It looks like you forgot to add your email'
     return true;
   } else if (atPos<2 || dotPos<atPos+2 || dotPos+2>=value.length) {
-    console.log(`atPos:${atPos}, dotPos:${dotPos}`);
     error.textContent = 'Please provide a valid email address.'
     return true; // trigger the if statement
   } else {

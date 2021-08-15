@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 45%;
+      grid-template-columns: 1fr 45%;
+}
+
+body main img.logo {
+  position: absolute;
+  top: 2rem;
+  left: 8rem;
+}
+
+body main article {
+  background: url(../images/bg-pattern-desktop.svg);
+  background-size: cover;
+  padding: 4rem 4rem 4rem 8rem;
+}
+
+body main article h1 {
+  margin-top: 5rem;
+}
+
+body main article h1,
+body main article h2 {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #ce9797;
+}
+
+body main article h2 {
+  font-weight: 600;
+  color: #413a3a;
+}
+
+body main article p {
+  margin-top: 1rem;
+  padding-right: 8rem;
+  color: #ce9797;
+  line-height: 1.5rem;
+}
+
+body main article form {
+  margin-top: 2rem;
+  position: relative;
+  width: 70%;
+}
+
+body main article form input {
+  outline: none;
+  width: 100%;
+  min-width: 280px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 1rem;
+  border: 1px solid #ce9797;
+}
+
+body main article form input::-webkit-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+}
+
+body main article form input:-ms-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+}
+
+body main article form input::-ms-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+}
+
+body main article form input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+}
+
+body main article form input.error {
+  border: 1px solid #ce9797;
+}
+
+body main article form img.valid {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 90px;
+}
+
+body main article form img.valid.error {
+  display: initial;
+}
+
+body main article form button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  -webkit-box-shadow: 0 2px 15px rgba(128, 128, 128, 0.5);
+          box-shadow: 0 2px 15px rgba(128, 128, 128, 0.5);
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+body main article form button:hover {
+  cursor: pointer;
+  background: linear-gradient(135deg, #f8bfbf, #ee7272);
+  -webkit-box-shadow: 0 2px 15px rgba(128, 128, 128, 0.7);
+          box-shadow: 0 2px 15px rgba(128, 128, 128, 0.7);
+}
+
+body main article p.valid {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: none;
+  color: #f96262;
+  padding: 0rem 1rem;
+  line-height: 0rem;
+}
+
+body main article p.valid.error {
+  display: block;
+}
+
+body main picture img {
+  width: 100%;
+}
+
+body footer {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  body main img.logo {
+    left: 3rem;
+  }
+  body main article {
+    padding: 4rem 2rem 2rem 3rem;
+  }
+  body main article h1 {
+    margin-top: 1rem;
+  }
+  body main article p {
+    padding-right: 0rem;
+  }
+  body main article form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  body main {
+    margin-top: 6rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 30% 1fr;
+        grid-template-rows: 30% 1fr;
+  }
+  body main article {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    padding: 2rem 2rem;
+  }
+  body main article h1,
+  body main article h2 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+  body main article p {
+    text-align: center;
+  }
+  body main article form {
+    width: 100%;
+  }
+  body main article form img.error {
+    right: 70px;
+  }
+  body main article form button {
+    width: 60px;
+  }
+  body main article p.error {
+    text-align: initial;
+  }
+}
+/*# sourceMappingURL=style.css.map */
