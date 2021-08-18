@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/using-gridflex-javascript-hghrAUFed](https://www.frontendmentor.io/solutions/using-gridflex-javascript-hghrAUFed)
+- Live Site URL: [https://introsignup-form.netlify.app/](https://introsignup-form.netlify.app/)
 
 ## My process
 

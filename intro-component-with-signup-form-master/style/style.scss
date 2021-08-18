@@ -140,6 +140,7 @@ body {
 @media screen and (min-width: 801px) {
   body main {
     padding: 4rem 6rem;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     background: url(../images/bg-intro-desktop.png);
 

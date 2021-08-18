@@ -158,6 +158,8 @@ body main section.subscript div.container #note span {
 @media screen and (min-width: 801px) {
   body main {
     padding: 4rem 6rem;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     background: url(../images/bg-intro-desktop.png);
