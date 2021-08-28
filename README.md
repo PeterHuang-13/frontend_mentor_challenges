@@ -23,3 +23,11 @@ I hope you find this repository helpful.
 | HTML/CSS/JS | [Article Preview Component Master](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)                                                    | [Live](https://article-component-by-peter.netlify.app/)    | [Code](https://github.com/PeterHuang-13/frontend_mentor_challenges/tree/master/article-preview-component-master)                            |
 | HTML/CSS/JS | [Base Apparel coming soon page](https://www.frontendmentor.io/solutions/using-gridflex-javascript-AC6a4n9zq)                                                        | [Live](https://base-apparel-email.netlify.app/)            | [Code](https://github.com/PeterHuang-13/frontend_mentor_challenges/tree/master/base-apparel-coming-soon-master)                             |
 | HTML/CSS/JS | [Intro component with sign-up form](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)                             | [Live](https://introsignup-form.netlify.app/)              | [Code](https://github.com/PeterHuang-13/frontend_mentor_challenges/tree/master/intro-component-with-signup-form-master)                     |
+
+### Junior
+
+| Languages | Challenge | Live | Code |
+| --------- | --------- | ---- | ---- |
+
+| HTML/CSS/JS
+| [Tip calculator app](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX) | [Live](https://tip-calcu-p.netlify.app/) | [Code](https://github.com/PeterHuang-13/frontend_mentor_challenges/tree/master/tip-calculator-app-main) |
