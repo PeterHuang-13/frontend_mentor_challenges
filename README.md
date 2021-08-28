@@ -26,8 +26,6 @@ I hope you find this repository helpful.
 
 ### Junior
 
-| Languages | Challenge | Live | Code |
-| --------- | --------- | ---- | ---- |
-
-| HTML/CSS/JS
-| [Tip calculator app](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX) | [Live](https://tip-calcu-p.netlify.app/) | [Code](https://github.com/PeterHuang-13/frontend_mentor_challenges/tree/master/tip-calculator-app-main) |
+| Languages | Challenge                                                                                   | Live                                     | Code                                                                                                    |
+| --------- | ------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| HTML      | [Tip calculator app](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX) | [Live](https://tip-calcu-p.netlify.app/) | [Code](https://github.com/PeterHuang-13/frontend_mentor_challenges/tree/master/tip-calculator-app-main) |
