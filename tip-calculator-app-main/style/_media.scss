@@ -1,0 +1,38 @@
+@media screen and(min-width:801px) {
+  section.container {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2rem;
+    border-radius: 1.5rem;
+    max-width: 1038px;
+    section.input {
+      padding: 0.8rem 1rem;
+      gap: 2.6rem;
+
+      .btn-wrapper {
+        .btn-tip {
+          width: 30%;
+        }
+        input.inp-text {
+          width: 30%;
+        }
+      }
+    }
+
+    section.output {
+      margin: 0rem;
+      padding: 2.5rem;
+      justify-content: space-between;
+
+      .line-wrapper {
+        gap: 1rem;
+
+        .line-output {
+          .value {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

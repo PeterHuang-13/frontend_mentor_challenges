@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #5e7a7d;
+  font-weight: 700;
+}
+
+img.logo {
+  margin: 3rem 0rem 2.5rem;
+}
+
+section.container {
+  background-color: white;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.container section.input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.1rem;
+}
+
+section.container section.input .label-wrapper {
+  margin-bottom: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.container section.input input.inp-text {
+  width: 100%;
+  height: 2.9rem;
+  background-color: #f4fafa;
+  border: none;
+  border-radius: 5px;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00494d;
+  text-align: right;
+  padding: 1.1rem;
+  outline: 0;
+}
+
+section.container section.input input.inp-text:focus {
+  border: 2px solid #26c0ab;
+}
+
+section.container section.input .btn-wrapper {
+  padding-top: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+
+section.container section.input .btn-wrapper .btn-tip {
+  width: 47.3%;
+  background-color: #00494d;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  padding: 0.37rem 0;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section.container section.input .btn-wrapper .btn-tip:hover {
+  cursor: pointer;
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+
+section.container section.input .btn-wrapper .btn-tip:focus {
+  background-color: #26c0ab;
+}
+
+section.container section.input .btn-wrapper .btn-active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+section.container section.input .btn-wrapper input.inp-text {
+  width: 47.3%;
+  text-align: center;
+}
+
+section.container section.input .inp-wrapper {
+  position: relative;
+}
+
+section.container section.input .inp-wrapper img {
+  position: absolute;
+  left: 1.2rem;
+  top: 1rem;
+}
+
+section.container section.input .error-msg {
+  color: indianred;
+  opacity: 0;
+}
+
+section.container section.input .show-error-msg {
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  opacity: 1;
+}
+
+section.container section.output {
+  width: 105%;
+  margin-top: 2rem;
+  background-color: #00494d;
+  border-radius: 1rem;
+  padding: 2.3rem 1.5rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  color: white;
+}
+
+section.container section.output .line-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+
+section.container section.output .line-wrapper .line-output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.container section.output .line-wrapper .line-output h1 {
+  color: #26c0ab;
+  font-size: 2rem;
+}
+
+section.container section.output .line-wrapper .line-output .title-wrapper h2 {
+  font-size: 1rem;
+}
+
+section.container section.output .line-wrapper .line-output .title-wrapper h3 {
+  font-size: 0.8rem;
+  color: #7f9c9f;
+}
+
+section.container section.output button.btn-reset {
+  background-color: #5e7a7d;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.6rem;
+  color: #00494d;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section.container section.output button.btn-reset.reset-active {
+  background-color: #26c0ab;
+}
+
+section.container section.output button.btn-reset:hover {
+  cursor: pointer;
+  background-color: #c5e4e7;
+}
+
+@media screen and (min-width: 801px) {
+  section.container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    gap: 2rem;
+    border-radius: 1.5rem;
+    max-width: 1038px;
+  }
+  section.container section.input {
+    padding: 0.8rem 1rem;
+    gap: 2.6rem;
+  }
+  section.container section.input .btn-wrapper .btn-tip {
+    width: 30%;
+  }
+  section.container section.input .btn-wrapper input.inp-text {
+    width: 30%;
+  }
+  section.container section.output {
+    margin: 0rem;
+    padding: 2.5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.container section.output .line-wrapper {
+    gap: 1rem;
+  }
+  section.container section.output .line-wrapper .line-output .value {
+    font-size: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
