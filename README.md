@@ -26,6 +26,7 @@ I hope you find this repository helpful.
 
 ### Junior
 
-| Languages   | Challenge                                                                                   | Live                                     | Code                                                                                                    |
-| ----------- | ------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| HTML/CSS/JS | [Tip calculator app](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX) | [Live](https://tip-calcu-p.netlify.app/) | [Code](https://github.com/PeterHuang-13/frontend_mentor_challenges/tree/master/tip-calculator-app-main) |
+| Languages   | Challenge                                                                                                         | Live                                     | Code                                                                                                               |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| HTML/CSS/JS | [Tip calculator app](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)                       | [Live](https://tip-calcu-p.netlify.app/) | [Code](https://github.com/PeterHuang-13/frontend_mentor_challenges/tree/master/tip-calculator-app-main)            |
+| HTML/CSS/JS | [Sunnyside agency landing page](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef) | [Live](https://sunny-site.netlify.app/)  | [Code](https://github.com/PeterHuang-13/frontend_mentor_challenges/tree/master/sunnyside-agency-landing-page-main) |
