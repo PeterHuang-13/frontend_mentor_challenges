@@ -1,0 +1,77 @@
+section.client {
+  padding: 4rem 0rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  h1 {
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-size: 1rem;
+    font-weight: 900;
+    color: $grayishBlue;
+    letter-spacing: 0.25rem;
+  }
+
+  .client-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.2rem;
+
+    .client {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      img {
+        border-radius: 90px;
+        width: 72px;
+      }
+
+      .testimonial {
+        color: $veryDarkGrayishBlue;
+        line-height: 2rem;
+        padding: 0rem 2rem;
+      }
+
+      .name-wrapper {
+        .name {
+          font-family: "Fraunces", serif;
+          font-weight: 900;
+          color: $veryDarkDesaturatedBlue;
+        }
+        .position {
+          padding-top: 0.8rem;
+          font-size: 0.9rem;
+          color: $grayishBlue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width:800px) {
+  section.client {
+    padding: 10rem 8rem;
+    gap: 5.1rem;
+
+    h1 {
+      font-size: 1.2rem;
+      letter-spacing: 0.4rem;
+    }
+
+    .client-wrapper {
+      flex-direction: row;
+      gap: 0.2rem;
+
+      .client {
+        gap: 4rem;
+      }
+    }
+  }
+}

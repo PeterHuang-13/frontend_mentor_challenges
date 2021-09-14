@@ -1,0 +1,44 @@
+.footer {
+  background-color: $backgorundColorFooter;
+  padding: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+  .footer-logo {
+    width: 11rem;
+    filter: brightness(0) invert(39%) sepia(67%) saturate(323%)
+      hue-rotate(118deg) brightness(90%) contrast(90%);
+  }
+
+  .footer-menu {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+
+    a {
+      text-decoration: none;
+      color: $darkModerateCyan;
+      transition: all 0.2s ease;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .social-media {
+    padding-top: 3rem;
+    list-style-type: none;
+    display: flex;
+    gap: 1.8rem;
+    a {
+      img:hover {
+        transition: all 0.2s ease;
+        filter: brightness(0) invert(100%);
+      }
+    }
+  }
+}

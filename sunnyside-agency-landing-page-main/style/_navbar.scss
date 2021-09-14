@@ -1,0 +1,142 @@
+.navBar {
+  // border: 1px solid black; //temporary
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 1.5rem;
+
+  .hide {
+    opacity: 0.5; // icon-hamburger
+  }
+
+  .hamburger {
+    transition: all 0.5s ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .menu-wrapper {
+    // border: 1px solid magenta;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    width: 88%;
+    position: absolute;
+    top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .triangle {
+      width: 0;
+      border-bottom: 1.5rem solid white;
+      border-left: 1.5rem solid transparent;
+    }
+
+    .menu {
+      background-color: $white;
+      width: 100%;
+      padding: 2.7rem 0 2.4rem;
+
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.1rem;
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.1rem;
+
+        a {
+          font-family: "Barlow", sans-serif;
+          text-decoration: none;
+          font-size: 1.2rem;
+          color: $darkGrayishBlue;
+        }
+      }
+
+      a.btn {
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: "Fraunces", serif;
+        color: $veryDarkDesaturatedBlue;
+
+        background-color: $yellow;
+
+        padding: 1.2rem 2rem;
+        border-radius: 90px;
+
+        transition: all 0.2s ease;
+      }
+    }
+  }
+
+  .show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media screen and(min-width:750px) {
+  nav.navBar {
+    max-width: 1440px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    .logo {
+      width: 11rem;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .menu-wrapper {
+      visibility: visible;
+      opacity: 1;
+      position: initial;
+
+      .triangle {
+        display: none;
+      }
+
+      .menu {
+        background: none;
+        padding: 0rem;
+
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 3rem;
+
+        ul {
+          flex-direction: row;
+          gap: 3rem;
+          a {
+            color: $white;
+          }
+        }
+
+        .btn {
+          background-color: $white;
+          &:hover {
+            background-color: rgba($color: #ffffff, $alpha: 0.3);
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
